@@ -56,10 +56,8 @@ map <C-n> :tab sp<CR>
 " SETTINGS
 " ******************************************************************************
 
-" set mousemodel=popup "exibe o conteúdo de folders e sugestões spell
 syntax on   "syntax highlight
 set showmatch "mostra caracteres ( { [ quando fechados
-" set textwidth=100 "largura do texto
 set nowrap  "sem wrap (quebra de linha)
 set mouse=a "habilita todas as acoes do mouse
 set nu "numeracao de linhas
@@ -69,7 +67,6 @@ set et "espacos em vez de tab
 color delek "habilita cor
 set tabstop=4 shiftwidth=4 expandtab
 set ic        "ignora maiúscula e minúsculas em uma busca
-" colorscheme desert
 
 "filetype plugin indent on
 set autoindent
