@@ -127,6 +127,9 @@ install_vundle () {
         git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         success "install vundle"
     fi
+
+    # Execute Vundle plugin to install all plugins added
+    vim +PluginInstall +qall
 }
 
 create_cache_viminfo () {
@@ -142,12 +145,9 @@ create_cache_viminfo () {
     fi
 }
 
-install_vundle
 create_cache_viminfo
 install_dotfiles
-
-# Install all plugins added in Vundle
-vim +PluginInstall +qall
+install_vundle
 
 echo ''
 echo '  All installed!'
