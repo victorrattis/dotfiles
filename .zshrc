@@ -7,6 +7,7 @@
 
 # Set prompts
 PROMPT='%m@%n %1~ '
+PROMPT='%F{green}%n@%f%F{green}%m%f %F{blue}%B%1~%b%f '
 
 setopt histignorealldups sharehistory
 
@@ -79,3 +80,8 @@ setopt pushdminus
 # chpwd() {
 #   print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 # }
+
+# Add android platform tools
+if [ -d "/home/vhra/Android/Sdk/platform-tools" ]; then
+  export PATH=$PATH:/home/vhra/Android/Sdk/platform-tools
+fi
